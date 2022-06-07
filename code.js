@@ -24,10 +24,9 @@ function clickButton(){
         }
     }
     catch(error){
-        error = 'Erro + erro javascript'
         document.getElementById('outputnumber').innerHTML = error
-   
         alert(error);
+
         }
 
     finally{
@@ -38,6 +37,7 @@ function clickButton(){
 
    function clickNumberButton(){
 
+    document.getElementById("outputnumber").innerHTML = " ";
     number = document.getElementById("inputnumber").value
 
     try{
@@ -49,7 +49,7 @@ function clickButton(){
         }
     }
     catch(erro){
-
+        console.log("Erro + erro javascript")
         document.getElementById("outputnumber").innerHTML = erro
          
     }
